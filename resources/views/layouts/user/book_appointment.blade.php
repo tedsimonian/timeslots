@@ -22,4 +22,13 @@
     </div>
 
 @endsection
+@section('scripts')
 
+    <script>
+
+        window.stripeKey='{{$stripeKey}}';
+
+
+    </script>
+
+@endsection

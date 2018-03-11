@@ -102,7 +102,7 @@
             let event_id=0;
             // checkout handler
             let handler = StripeCheckout.configure({
-                key: 'pk_test_6ZJHLNGtVzNakpFQwmqddtKX',
+                key: '{{$stripeKey}}',
                 image: 'https://cdn.meme.am/images/100x100/15882140.jpg',
                 token: function(token) {
 
