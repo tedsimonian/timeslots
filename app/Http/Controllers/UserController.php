@@ -1003,9 +1003,11 @@ class UserController extends Controller
      */
     public function transactionsView(){
 
-        return view('layouts.user.transactions');
+        return view('layouts.user.transactions')->with('stripeKey',env('STRIPE_PUB_KEY'));
 
     }
+
+
 
 
     /**
