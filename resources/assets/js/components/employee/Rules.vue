@@ -984,7 +984,7 @@
                                 position: 'top-center',
                                 loaderBg: '#ff6849',
                                 icon: 'success',
-                                hideAfter: 4500,
+                                hideAfter: 1000,
                                 stack: 6
                             });
 
@@ -996,7 +996,7 @@
                                 position: 'top-center',
                                 loaderBg: '#ff6849',
                                 icon: 'error',
-                                hideAfter: 4500,
+                                hideAfter: 1000,
                                 stack: 6
                             });
 
@@ -1023,7 +1023,7 @@
                                 position: 'top-center',
                                 loaderBg: '#ff6849',
                                 icon: 'success',
-                                hideAfter: 4500,
+                                hideAfter: 1000,
                                 stack: 6
                             });
 
@@ -1035,7 +1035,7 @@
                                 position: 'top-center',
                                 loaderBg: '#ff6849',
                                 icon: 'error',
-                                hideAfter: 4500,
+                                hideAfter: 1000,
                                 stack: 6
                             });
 
@@ -1064,7 +1064,7 @@
                                 position: 'top-center',
                                 loaderBg: '#ff6849',
                                 icon: 'success',
-                                hideAfter: 4500,
+                                hideAfter: 1000,
                                 stack: 6
                             });
 
@@ -1076,7 +1076,7 @@
                                 position: 'top-center',
                                 loaderBg: '#ff6849',
                                 icon: 'error',
-                                hideAfter: 4500,
+                                hideAfter: 1000,
                                 stack: 6
                             });
 

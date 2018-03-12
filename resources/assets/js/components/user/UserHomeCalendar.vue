@@ -200,10 +200,10 @@
 
 
     const options = {
-        name: 'Shut up and take my money!',
-        key:'pk_test_6ZJHLNGtVzNakpFQwmqddtKX',
-        currency: 'USD',
-        image: 'https://cdn.meme.am/images/100x100/15882140.jpg',
+        name: 'Payment Process',
+        key:'pk_test_a1ce7hnnL7ysRshCjsgjY26J',
+        currency: 'CAD',
+        image: 'https://blog.apruve.com/hs-fs/hubfs/Payment%20Delays-01.png?width=100&name=Payment%20Delays-01.png',
         locale: 'auto',
         billingAddress: false,
         panelLabel: 'Pay Now {{amount}}',
@@ -215,7 +215,6 @@
 
 
         data(){
-
             return {
 
                 selectedDate: new Date(),
@@ -231,15 +230,13 @@
 
             selectedDateFormated(){
 
-
-                return moment(this.selectedDate).format("MMM Do YY");
+                return moment(this.selectedDate).format("MMMM Do YYYY");
             },
             attributes() {
 
 
                 let attributes=[];
                 for(let i=0;i<this.events_marker.length;i++){
-
                     attributes.push({
 
                         dot: {
@@ -247,13 +244,12 @@
                         },
                         popover:{
 
-                            label:this.events_marker[i].count+ ' Appointment/s',
+                            label:this.events_marker[i].count+ ' Appointment(s)',
                         },
                         dates: this.events_marker[i].date
                     });
+
                 }
-
-
 
                 return attributes;
 
@@ -297,7 +293,7 @@
                                     position: 'top-center',
                                     loaderBg: '#ff6849',
                                     icon: 'success',
-                                    hideAfter: 4500,
+                                    hideAfter: 1000,
                                     stack: 6
                                 });
 
@@ -314,7 +310,7 @@
                                     position: 'top-center',
                                     loaderBg: '#ff6849',
                                     icon: 'error',
-                                    hideAfter: 4500,
+                                    hideAfter: 1000,
                                     stack: 6
                                 });
                             }
@@ -348,7 +344,6 @@
                     this.selectedDate=new Date();
 
                 }
-
                 this.getEventsByDay(date);
 
 

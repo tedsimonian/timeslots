@@ -102,8 +102,8 @@
                                     <p v-if="verified==1 && can_pay">You have requested to book an appointment with <strong>{{booking.employee.name}}</strong>:<br>
                                         <strong>Date: {{dateFormat}}</strong><br>
                                         <strong>Time:</strong> {{booking.timeslot}} - {{endTime(booking.timeslot,booking.duration)}}<br>
-                                        <strong>Price:</strong> {{booking.price}}<br>
-                                        <strong>Duration:</strong> {{booking.duration}}</p>
+                                        <strong>Price:</strong> ${{booking.price}}<br>
+                                        <strong>Duration:</strong> {{booking.duration}} min</p>
 
                                     <p v-if="verified!=1">
                                         <strong>Please verify your account in order to book appointments!</strong>
@@ -165,10 +165,10 @@
 
 
     const options = {
-        name: 'Shut up and take my money!',
-        key:'pk_test_6ZJHLNGtVzNakpFQwmqddtKX',
-        currency: 'USD',
-        image: 'https://cdn.meme.am/images/100x100/15882140.jpg',
+        name: 'Payment Process',
+        key:'pk_test_a1ce7hnnL7ysRshCjsgjY26J',
+        currency: 'CAD',
+        image: 'https://blog.apruve.com/hs-fs/hubfs/Payment%20Delays-01.png?width=100&name=Payment%20Delays-01.png',
         locale: 'auto',
         billingAddress: false,
         panelLabel: 'Pay Now {{amount}}',
@@ -239,7 +239,7 @@
             },
             calendarInfo(){
 
-                return 'Price: $'+this.booking.price+ ' Duration:'+this.booking.duration+'min';
+                return 'Price: $' + this.booking.price + '       Duration: '+ this.booking.duration +' min';
 
             },
             attributes() {
@@ -333,7 +333,7 @@
                             position: 'top-center',
                             loaderBg: '#ff6849',
                             icon: 'success',
-                            hideAfter: 4500,
+                            hideAfter: 1000,
                             stack: 6
                         });
 
@@ -346,7 +346,7 @@
                             position: 'top-center',
                             loaderBg: '#ff6849',
                             icon: 'error',
-                            hideAfter: 4500,
+                            hideAfter: 1000,
                             stack: 6
                         });
                     }
@@ -386,7 +386,7 @@
                                     position: 'top-center',
                                     loaderBg: '#ff6849',
                                     icon: 'success',
-                                    hideAfter: 4500,
+                                    hideAfter: 1000,
                                     stack: 6
                                 });
 
@@ -399,7 +399,7 @@
                                     position: 'top-center',
                                     loaderBg: '#ff6849',
                                     icon: 'error',
-                                    hideAfter: 4500,
+                                    hideAfter: 1000,
                                     stack: 6
                                 });
                             }

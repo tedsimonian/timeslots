@@ -6,8 +6,8 @@
  */
 
 require('./bootstrap');
-
 window.Vue = require('vue');
+//window.Vue.config.devtools = true
 
 
 
