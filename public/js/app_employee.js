@@ -60242,12 +60242,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             _this.form.event_duration = response.data.event_duration == null ? '' : response.data.event_duration;
             _this.form.price = response.data.price == null ? '' : response.data.price;
 
-            //this.increment=response.data.increment;
-            // if(this.increment!=null){
+            _this.increment = response.data.increment;
+            if (_this.increment != null) {
 
-            // this.calculateSlotsNum(this.increment);
-            // }
-
+                _this.calculateSlotsNum(_this.increment);
+            }
         });
 
         this.getSchedule();
@@ -60590,8 +60589,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
                 if (status.success) {
 
-                    //that.increment=that.form.increment;
-                    // that.calculateSlotsNum(that.increment);
+                    that.increment = that.form.increment;
+                    that.calculateSlotsNum(that.increment);
 
                     that.getSchedule();
                     that.getDaysMarkers();

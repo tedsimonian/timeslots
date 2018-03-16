@@ -547,11 +547,11 @@
                 this.form.event_duration=(response.data.event_duration==null) ? '' : response.data.event_duration;
                 this.form.price=(response.data.price==null) ? '' : response.data.price;
 
-                //this.increment=response.data.increment;
-               // if(this.increment!=null){
+                this.increment=response.data.increment;
+               if(this.increment!=null){
 
-                 // this.calculateSlotsNum(this.increment);
-               // }
+                 this.calculateSlotsNum(this.increment);
+               }
 
 
 
@@ -970,10 +970,8 @@
 
                         if(status.success){
 
-
-
-                            //that.increment=that.form.increment;
-                           // that.calculateSlotsNum(that.increment);
+                            that.increment=that.form.increment;
+                            that.calculateSlotsNum(that.increment);
 
                             that.getSchedule();
                             that.getDaysMarkers();
