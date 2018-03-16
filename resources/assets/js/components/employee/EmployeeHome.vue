@@ -650,7 +650,7 @@
                         borderStyle:'solid',
                         color:'white'
                     },
-                    dates: t.date,
+                    dates: moment(t.date).format(),
                     customData: t,
                 }));
 

@@ -63358,7 +63358,7 @@ Vue.component('colorpicker', {
                         borderStyle: 'solid',
                         color: 'white'
                     },
-                    dates: t.date,
+                    dates: __WEBPACK_IMPORTED_MODULE_2_moment___default()(t.date).format(),
                     customData: t
                 };
             });
