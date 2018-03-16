@@ -64373,7 +64373,7 @@ Vue.component('colorpicker', {
 
                         label: this.events_marker[i].type == 'event' ? this.events_marker[i].count + ' Appointment/s' : this.events_marker[i].count + ' Event/s'
                     },
-                    dates: this.events_marker[i].date
+                    dates: __WEBPACK_IMPORTED_MODULE_2_moment___default()(this.events_marker[i].date).format()
                 });
             }
 

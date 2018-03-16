@@ -666,7 +666,7 @@
 
                           label:(this.events_marker[i].type=='event') ? this.events_marker[i].count+ ' Appointment/s' : this.events_marker[i].count+ ' Event/s',
                         },
-                        dates: this.events_marker[i].date
+                        dates: moment(this.events_marker[i].date).format()
                     });
                 }
 
@@ -861,9 +861,9 @@
                 let total=((hour*60)+minutes)+parseInt(duration);
                 let final_hours = Math.trunc(total/60);
                 let final_minutes = (total % 60)==0 ? '00' : total % 60;
-				
-			
-				
+
+
+
 
                 return  final_hours + ':' + final_minutes;
             },

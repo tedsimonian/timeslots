@@ -683,7 +683,7 @@
 
                             label:(this.events_marker[i].type=='event') ? this.events_marker[i].count+ ' Appointment/s' : this.events_marker[i].count+ ' Event/s',
                         },
-                        dates: this.events_marker[i].date
+                        dates: moment(this.events_marker[i].date).format()
                     });
                 }
 
