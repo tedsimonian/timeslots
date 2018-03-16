@@ -246,7 +246,7 @@
 
                             label:this.events_marker[i].count+ ' Appointment(s)',
                         },
-                        dates: this.events_marker[i].date
+                        dates: moment(this.events_marker[i].date).format()
                     });
 
                 }
