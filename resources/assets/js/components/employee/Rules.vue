@@ -578,7 +578,7 @@
                         borderStyle:'solid',
                         color:t.color
                     },
-                    dates: t.date,
+                    dates: moment(t.date).format(),
                     customData: t,
                 }));
             },

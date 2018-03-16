@@ -60268,7 +60268,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         borderStyle: 'solid',
                         color: t.color
                     },
-                    dates: t.date,
+                    dates: __WEBPACK_IMPORTED_MODULE_2_moment___default()(t.date).format(),
                     customData: t
                 };
             });
